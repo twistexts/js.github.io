@@ -1,0 +1,45 @@
+/* styles.css */
+
+body {
+    display: flex; /* Use flexbox to center the widget */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #e0e0e0; /* Light gray background for contrast */
+    font-family: 'Poppins', sans-serif; /* Set font family */
+}
+
+.pS {
+    background-color: #ffffff; /* White background for the widget */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), /* Outer shadow for depth */
+                -8px -8px 15px rgba(255, 255, 255, 0.7); /* Inner shadow for inset effect */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center text within the widget */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.pS:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), /* Adjust shadow on hover */
+                -4px -4px 10px rgba(255, 255, 255, 0.7); /* Lighter shadow on hover */
+}
+
+.pS h1 {
+    font-size: 22px; /* Font size for the greeting text */
+    color: #212121; /* Dark gray text color */
+    margin: 0; /* Remove default margin */
+}
+
+.pS h1 .fa {
+    margin-right: 2px; /* Space between icon and text */
+    font-size: 22px; /* Size of the Font Awesome icon */
+    color: #ff4081; /* Color of the icon */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .pS h1 {
+        font-size: 12px; /* Smaller font size for mobile devices */
+    }
+}
